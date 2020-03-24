@@ -7,18 +7,18 @@ server:
   port: 8001
   
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisÅäÖÃÎÄ¼şËùÔÚÂ·¾¶
-  type-aliases-package: com.busiui.springcloud.entities    # ËùÓĞEntity±ğÃûÀàËùÔÚ°ü
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisé…ç½®æ–‡ä»¶æ‰€åœ¨è·¯å¾„
+  type-aliases-package: com.busiui.springcloud.entities    # æ‰€æœ‰Entityåˆ«åç±»æ‰€åœ¨åŒ…
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapperÓ³ÉäÎÄ¼ş
+  - classpath:mybatis/mapper/**/*.xml                       # mapperæ˜ å°„æ–‡ä»¶
 
 eureka:
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka 
   instance:
-    instance-id: dept-8001.com #×Ô¶¨Òå·şÎñÃû³Æ
-    prefer-ip-address: true #·ÃÎÊÂ·¾¶ÏÔÊ¾IPµØÖ·
+    instance-id: dept-8001.com #è‡ªå®šä¹‰æœåŠ¡åç§°
+    prefer-ip-address: true #è®¿é—®è·¯å¾„æ˜¾ç¤ºIPåœ°å€
     
     
 spring:
@@ -26,19 +26,18 @@ spring:
    application:
     name: microservicecloud-config-dept-client 
    datasource:
-    type: com.alibaba.druid.pool.DruidDataSource            # µ±Ç°Êı¾İÔ´²Ù×÷ÀàĞÍ
-    driver-class-name: com.mysql.cj.jdbc.Driver              # mysqlÇı¶¯°ü
-    url: jdbc:mysql://localhost:3306/cloudDB01?characterEncoding=utf-8&useSSL=true&serverTimezone=GMT              # Êı¾İ¿âÃû³Æ
+    type: com.alibaba.druid.pool.DruidDataSource            # å½“å‰æ•°æ®æºæ“ä½œç±»å‹
+    driver-class-name: com.mysql.cj.jdbc.Driver              # mysqlé©±åŠ¨åŒ…
+    url: jdbc:mysql://localhost:3306/cloudDB01?characterEncoding=utf-8&useSSL=true&serverTimezone=GMT              # æ•°æ®åº“åç§°
     username: root
     password: 1q2w3e4r
     dbcp2:
-      min-idle: 5                                           # Êı¾İ¿âÁ¬½Ó³ØµÄ×îĞ¡Î¬³ÖÁ¬½ÓÊı
-      initial-size: 5                                       # ³õÊ¼»¯Á¬½ÓÊı
-      max-total: 5                                          # ×î´óÁ¬½ÓÊı
-      max-wait-millis: 200                                  # µÈ´ıÁ¬½Ó»ñÈ¡µÄ×î´ó³¬Ê±Ê±¼ä
+      min-idle: 5                                           # æ•°æ®åº“è¿æ¥æ± çš„æœ€å°ç»´æŒè¿æ¥æ•°
+      initial-size: 5                                       # åˆå§‹åŒ–è¿æ¥æ•°
+      max-total: 5                                          # æœ€å¤§è¿æ¥æ•°
+      max-wait-millis: 200                                  # ç­‰å¾…è¿æ¥è·å–çš„æœ€å¤§è¶…æ—¶æ—¶é—´
 
-
-info:   #Î¢·şÎñ·ÃÎÊÍøÖ· ĞÅÏ¢µÄÍêÉÆ
+info:   #å¾®æœåŠ¡è®¿é—®ç½‘å€ ä¿¡æ¯çš„å®Œå–„
   app.name: busiui-microservicecloud
   company.name: www.busiui.com
   build.artifactId: $project.artifactId$
@@ -48,18 +47,18 @@ server:
   port: 8001
   
 mybatis:
-  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisÅäÖÃÎÄ¼şËùÔÚÂ·¾¶
-  type-aliases-package: com.busiui.springcloud.entities    # ËùÓĞEntity±ğÃûÀàËùÔÚ°ü
+  config-location: classpath:mybatis/mybatis.cfg.xml        # mybatisé…ç½®æ–‡ä»¶æ‰€åœ¨è·¯å¾„
+  type-aliases-package: com.busiui.springcloud.entities    # æ‰€æœ‰Entityåˆ«åç±»æ‰€åœ¨åŒ…
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapperÓ³ÉäÎÄ¼ş
+  - classpath:mybatis/mapper/**/*.xml                       # mapperæ˜ å°„æ–‡ä»¶
 
 eureka:
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka 
   instance:
-    instance-id: dept-8001.com #×Ô¶¨Òå·şÎñÃû³Æ
-    prefer-ip-address: true #·ÃÎÊÂ·¾¶ÏÔÊ¾IPµØÖ·
+    instance-id: dept-8001.com #è‡ªå®šä¹‰æœåŠ¡åç§°
+    prefer-ip-address: true #è®¿é—®è·¯å¾„æ˜¾ç¤ºIPåœ°å€
     
     
 spring:
@@ -67,19 +66,19 @@ spring:
    application:
     name: microservicecloud-config-dept-client 
    datasource:
-    type: com.alibaba.druid.pool.DruidDataSource            # µ±Ç°Êı¾İÔ´²Ù×÷ÀàĞÍ
-    driver-class-name: com.mysql.cj.jdbc.Driver              # mysqlÇı¶¯°ü
-    url: jdbc:mysql://localhost:3306/cloudDB02?characterEncoding=utf-8&useSSL=true&serverTimezone=GMT              # Êı¾İ¿âÃû³Æ
+    type: com.alibaba.druid.pool.DruidDataSource            # å½“å‰æ•°æ®æºæ“ä½œç±»å‹
+    driver-class-name: com.mysql.cj.jdbc.Driver              # mysqlé©±åŠ¨åŒ…
+    url: jdbc:mysql://localhost:3306/cloudDB02?characterEncoding=utf-8&useSSL=true&serverTimezone=GMT              # æ•°æ®åº“åç§°
     username: root
     password: 1q2w3e4r
     dbcp2:
-      min-idle: 5                                           # Êı¾İ¿âÁ¬½Ó³ØµÄ×îĞ¡Î¬³ÖÁ¬½ÓÊı
-      initial-size: 5                                       # ³õÊ¼»¯Á¬½ÓÊı
-      max-total: 5                                          # ×î´óÁ¬½ÓÊı
-      max-wait-millis: 200                                  # µÈ´ıÁ¬½Ó»ñÈ¡µÄ×î´ó³¬Ê±Ê±¼ä
+      min-idle: 5                                           # æ•°æ®åº“è¿æ¥æ± çš„æœ€å°ç»´æŒè¿æ¥æ•°
+      initial-size: 5                                       # åˆå§‹åŒ–è¿æ¥æ•°
+      max-total: 5                                          # æœ€å¤§è¿æ¥æ•°
+      max-wait-millis: 200                                  # ç­‰å¾…è¿æ¥è·å–çš„æœ€å¤§è¶…æ—¶æ—¶é—´
 
 
-info:   #Î¢·şÎñ·ÃÎÊÍøÖ· ĞÅÏ¢µÄÍêÉÆ
+info:   #å¾®æœåŠ¡è®¿é—®ç½‘å€ ä¿¡æ¯çš„å®Œå–„
   app.name: busiui-microservicecloud
   company.name: www.busiui.com
   build.artifactId: $project.artifactId$
